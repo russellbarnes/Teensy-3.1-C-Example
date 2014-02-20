@@ -1,4 +1,9 @@
 
+# Makefile for Teensy 3.1
+# Modified for development outside of Arduino environment: 
+# 	Paths to compiler and tools have changed (OS-dependent)
+# 	References to MK20DX128 have changed to MK20DX256
+
 # The name of your project (used to name the compiled .hex file)
 TARGET = main
 
@@ -6,7 +11,7 @@ TARGET = main
 OPTIONS = -DF_CPU=48000000 -DUSB_SERIAL -DLAYOUT_US_ENGLISH
 
 # options needed by many Arduino libraries to configure for Teensy 3.0
-OPTIONS += -D__MK20DX128__ -DARDUIO=104
+OPTIONS += -D__MK20DX256__ -DARDUIO=104
 
 
 #************************************************************************
